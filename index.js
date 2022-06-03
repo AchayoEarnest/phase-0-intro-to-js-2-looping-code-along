@@ -1,13 +1,23 @@
 // Code your solutions in this file
 var namesArray = ["Guadalupe", "Ollie", "Aki"];
 var event = "birthday"
+var cards = [];
 
 function writeCards(namesArray, event){
-    let cards = [];
+   
     for(var i = 0; i < namesArray.length; i++){
-        cards.push(`Thank you, ${namesArray[i]}, for the wonderful surprise gift!`);
+        cards.push(`Thank you, ${namesArray[i]}, for the wonderful ${event} gift!`);
 
     }
 
-    console.log(cards);
+    return cards;
 }
+
+function countDown(num) {
+    while (num >= 0){
+        console.log(num);
+        num--;
+    }
+}
+
+countDown(num)
